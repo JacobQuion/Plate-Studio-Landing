@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Plate Studio — AI video ads for restaurants</title>
+  <meta name="description" content="Dish Motion by Plate Studio turns your food photos and Google Maps or Yelp page into a beautiful 1-minute video ad, published to YouTube and every social in one click." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Geist:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#" class="logo" aria-label="Plate Studio home">
+        <span class="logo__mark" aria-hidden="true"></span>Plate Studio
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#how">How it works</a>
+        <a href="#features">Features</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a href="#get-started" class="btn btn--glass btn--sm nav__cta">Login</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__sky" aria-hidden="true">
+        <span class="hero__sun"></span>
+        <svg class="hero__hills" viewBox="0 0 1440 420" preserveAspectRatio="none">
+          <path d="M0 300 C120 250 220 220 340 250 S560 190 700 230 S920 200 1060 240 S1300 210 1440 250 L1440 420 L0 420Z" fill="url(#h1)"/>
+          <path d="M0 340 C160 300 300 330 460 310 S760 280 900 320 S1200 300 1440 320 L1440 420 L0 420Z" fill="url(#h2)"/>
+          <defs>
+            <linearGradient id="h1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a1a78"/><stop offset="1" stop-color="#8a64d6"/></linearGradient>
+            <linearGradient id="h2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6a45c0"/><stop offset="1" stop-color="#ece4fb"/></linearGradient>
+          </defs>
+        </svg>
+      </div>
+
+      <div class="container hero__inner">
+        <h1 class="hero__title">Video Ads<br />for Small Restaurants</h1>
+        <span class="hero__rule" aria-hidden="true"></span>
+        <p class="hero__sub">
+          Plate Studio turns your food photos and Google Maps or Yelp page into a beautiful
+          1-minute ad, published everywhere in one click.
+        </p>
+        <div class="hero__ctas" id="get-started">
+          <a href="#" class="btn btn--blue btn--lg">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+            Make my own ad
+          </a>
+        </div>
+      </div>
+
+      <!-- DEMO PLACEHOLDER -->
+      <div class="container" id="demo">
+        <div class="demo">
+          <div class="demo__menubar">
+            <span class="logo__mark" aria-hidden="true"></span>
+            <span class="demo__menubar-right" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M2 9a15 15 0 0 1 20 0M5.5 12.5a10 10 0 0 1 13 0M9 16a5 5 0 0 1 6 0"/><circle cx="12" cy="19.5" r="1" fill="currentColor"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="2" y="5" width="20" height="6" rx="3"/><rect x="2" y="13" width="20" height="6" rx="3"/><circle cx="17" cy="8" r="1.5" fill="currentColor"/><circle cx="7" cy="16" r="1.5" fill="currentColor"/></svg>
+            </span>
+          </div>
+
+          <div class="demo__window">
+            <div class="demo__bar"><span></span><span></span><span></span></div>
+            <div class="demo__screen">
+              <button class="demo__play" aria-label="Play demo (coming soon)">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><polygon points="7 4 20 12 7 20 7 4"/></svg>
+              </button>
+              <p class="demo__label">Demo video coming soon</p>
+            </div>
+          </div>
+
+          <div class="demo__dock" aria-hidden="true">
+            <span class="dock-app dock-app--grid"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+            <span class="dock-app dock-app--compass"></span>
+            <span class="dock-app dock-app--gear"></span>
+            <span class="dock-app dock-app--brand"><span class="logo__mark"></span></span>
+            <span class="dock-sep"></span>
+            <span class="dock-app dock-app--trash"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section" id="how">
+      <div class="container">
+        <h2 class="heading">How Plate Studio <span class="fade">makes your ad</span></h2>
+
+        <div class="how">
+          <article class="how__card how__card--blue">
+            <h3>Plate Studio <span class="pill pill--light">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>reads</span> your restaurant</h3>
+            <p>Paste your Google Maps or Yelp link. We pull your name, hours, best reviews and overall vibe.</p>
+
+            <div class="scan">
+              <p class="scan__timer" id="scan-count">0</p>
+              <p class="scan__label"><span class="dot-live"></span>Reviews read</p>
+            </div>
+            <div class="wave" id="wave" aria-hidden="true"></div>
+
+            <div class="panel panel--frost">
+              <div class="panel__tabs panel__tabs--steps" id="scan-tabs">
+                <span class="is-on">Script</span><span>·</span><span>Music</span><span>·</span><span>Captions</span>
+              </div>
+              <div class="panel__input panel__input--ticker"><span class="ticker" id="review-ticker">Boudin Bakery · ★ 4.4 · “Hopped in to get bread: DELICIOUS SOURDOUGH!”</span><span class="caret" aria-hidden="true"></span></div>
+            </div>
+          </article>
+
+          <article class="how__card how__card--light">
+            <h3>Then it <span class="pill pill--dark">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 6.6L21 11l-6.6 2.4L12 20l-2.4-6.6L3 11l6.6-2.4z"/></svg>creates</span> your ad instantly</h3>
+            <p>Drop in your phone photos. We color-grade, reframe and animate every shot with music and captions.</p>
+
+            <div class="toolbar"><span class="toolbar__logo"></span><span class="toolbar__btn">⌄ Hide</span><span class="toolbar__stop"></span></div>
+            <div class="panel panel--dark">
+              <div class="panel__head">
+                <span class="panel__muted" id="stage-text">Reading your reviews…</span>
+                <span class="tag">Render</span>
+              </div>
+              <div class="progress"><div class="progress__bar" id="progress-bar"></div></div>
+              <div class="panel__tabs panel__tabs--dark">
+                <span>✦ Script</span><span>·</span><span>Music</span><span>·</span><span>Captions</span><span>·</span><span>Export</span>
+              </div>
+              <div class="panel__input panel__input--dark">
+                Make the ramen shot longer, or <kbd>⌘</kbd><kbd>↵</kbd> to publish
+                <span class="send">▶</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BIG PRODUCT PANEL -->
+    <section class="section section--center">
+      <div class="container">
+        <h2 class="heading">Instant video <span class="fade">ads</span></h2>
+        <p class="sub">The easiest way to get beautiful, ready-to-post ads for your restaurant.</p>
+
+        <div class="showcase">
+          <div class="window">
+            <div class="window__bar">
+              <span class="d d--r"></span><span class="d d--y"></span><span class="d d--g"></span>
+              <span class="window__search">Search your ads…</span>
+              <span class="window__btn">New ad</span>
+            </div>
+            <div class="window__body">
+              <p class="window__date">Friday, Sep 26</p>
+              <h4 class="window__title">Hinodeya Ramen — Fall Menu Ad</h4>
+              <div class="window__tabs"><span class="on">Storyboard</span><span>Script</span><span>Publish</span></div>
+              <div class="frames">
+                <div class="frame f1"><span>0:00</span></div>
+                <div class="frame f2"><span>0:08</span></div>
+                <div class="frame f3"><span>0:17</span></div>
+                <div class="frame f4"><span>0:31</span></div>
+                <div class="frame f5"><span>0:44</span></div>
+              </div>
+              <p class="window__h">Script</p>
+              <ul class="window__list">
+                <li>Open on steam rising from the <b>signature dashi ramen</b>.</li>
+                <li>Cut to a slow pour of the broth, voiceover: “Ramen, lighter and brighter.”</li>
+                <li>Overlay a top Google review ★★★★★</li>
+                <li>Show storefront with address and hours from Google Maps.</li>
+                <li>End card: <b>Order tonight</b> · 1-minute, 16:9 / 9:16 / 1:1</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <p class="compat__label">Publishes to every platform</p>
+        <div class="compat">
+          <span><svg viewBox="0 0 24 24" style="--c:#ff0000" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>YouTube</span>
+          <span><svg viewBox="0 0 24 24" style="--c:#ff0069" aria-hidden="true"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg>Instagram</span>
+          <span><svg viewBox="0 0 24 24" style="--c:#111" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>TikTok</span>
+          <span><svg viewBox="0 0 24 24" style="--c:#0081fb" aria-hidden="true"><path d="M6.915 4.03c-1.968 0-3.683 1.28-4.871 3.113C.704 9.208 0 11.883 0 14.449c0 .706.07 1.369.21 1.973a6.624 6.624 0 0 0 .265.86 5.297 5.297 0 0 0 .371.761c.696 1.159 1.818 1.927 3.593 1.927 1.497 0 2.633-.671 3.965-2.444.76-1.012 1.144-1.626 2.663-4.32l.756-1.339.186-.325c.061.1.121.196.183.3l2.152 3.595c.724 1.21 1.665 2.556 2.47 3.314 1.046.987 1.992 1.22 3.06 1.22 1.075 0 1.876-.355 2.455-.843a3.743 3.743 0 0 0 .81-.973c.542-.939.861-2.127.861-3.745 0-2.72-.681-5.357-2.084-7.45-1.282-1.912-2.957-2.93-4.716-2.93-1.047 0-2.088.467-3.053 1.308-.652.57-1.257 1.29-1.82 2.05-.69-.875-1.335-1.547-1.958-2.056-1.182-.966-2.315-1.303-3.454-1.303zm10.16 2.053c1.147 0 2.188.758 2.992 1.999 1.132 1.748 1.647 4.195 1.647 6.4 0 1.548-.368 2.9-1.839 2.9-.58 0-1.027-.23-1.664-1.004-.496-.601-1.343-1.878-2.832-4.358l-.617-1.028a44.908 44.908 0 0 0-1.255-1.98c.07-.109.141-.224.211-.327 1.12-1.667 2.118-2.602 3.358-2.602zm-10.201.553c1.265 0 2.058.791 2.675 1.446.307.327.737.871 1.234 1.579l-1.02 1.566c-.757 1.163-1.882 3.017-2.837 4.338-1.191 1.649-1.81 1.817-2.486 1.817-.524 0-1.038-.237-1.383-.794-.263-.426-.464-1.13-.464-2.046 0-2.221.63-4.535 1.66-6.088.454-.687.964-1.226 1.533-1.533a2.264 2.264 0 0 1 1.088-.285z"/></svg>Meta</span>
+          <span><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#FBBC05" d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 12.955 4 4 12.955 4 24s8.955 20 20 20 20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z"/><path fill="#EA4335" d="M6.306 14.691l6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 16.318 4 9.656 8.337 6.306 14.691z"/><path fill="#34A853" d="M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238A11.91 11.91 0 0 1 24 36c-5.202 0-9.619-3.317-11.283-7.946l-6.522 5.025C9.505 39.556 16.227 44 24 44z"/><path fill="#4285F4" d="M43.611 20.083H42V20H24v8h11.303a12.04 12.04 0 0 1-4.087 5.571l.003-.002 6.19 5.238C36.971 39.205 44 34 44 24c0-1.341-.138-2.65-.389-3.917z"/></svg>Google</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section section--center" id="features">
+      <div class="container">
+        <h2 class="heading">Made for busy <span class="fade">restaurant owners</span></h2>
+        <p class="sub">You run the kitchen. We run the camera.</p>
+
+        <div class="feats">
+          <article class="feat">
+            <div class="feat__art">
+              <div class="mini">
+                <div class="mini__head"><b>Your photos <span>(5)</span></b><span class="ok">✓ No shoot needed</span></div>
+                <div class="mini__row"><span class="av">🍜</span><div><b>ramen.jpg</b><small>Signature dish</small></div><em>Hero</em></div>
+                <div class="mini__row"><span class="av">🥟</span><div><b>dumplings.jpg</b><small>Appetizer</small></div><em>Scene ⌄</em></div>
+                <div class="mini__row"><span class="av">🍤</span><div><b>tempura.jpg</b><small>Special</small></div><em>Scene ⌄</em></div>
+                <div class="mini__row"><span class="av">🏮</span><div><b>storefront.jpg</b><small>Exterior</small></div><em>End ⌄</em></div>
+              </div>
+            </div>
+            <p><b>No filming required.</b> Use the phone photos you already have. No shoots, crews or lighting rigs.</p>
+          </article>
+
+          <article class="feat">
+            <div class="feat__art">
+              <div class="review">
+                <span class="chip">Google Maps</span>
+                <p class="stars">★★★★★</p>
+                <p class="quote">“Best broth in town. The dumplings are unreal.”</p>
+                <span class="chip chip--alt">Yelp · 4.8</span>
+                <div class="lines"><span></span><span></span><span class="short"></span></div>
+              </div>
+            </div>
+            <p><b>Plate Studio knows your restaurant.</b> Your real reviews, menu highlights and location go straight into the script.</p>
+          </article>
+
+          <article class="feat">
+            <div class="feat__art feat__art--purple">
+              <div class="ratios">
+                <span class="r r--wide">16:9</span>
+                <span class="r r--tall">9:16</span>
+                <span class="r r--sq">1:1</span>
+              </div>
+              <div class="keys"><span>YouTube</span><span>Reels</span><span>TikTok</span><span>Feed</span></div>
+            </div>
+            <p><b>Sized for every screen.</b> Widescreen for YouTube, vertical for Reels and TikTok, square for the feed.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="section">
+      <div class="container split">
+        <div class="split__art">
+          <div class="tablet" id="tablet">
+            <p class="tablet__meta">Friday, Sep 26 · <span data-t="name">Hinodeya Ramen</span></p>
+            <h4 data-t="title">Fall Menu Launch — 1 Minute Ad</h4>
+            <div class="window__tabs"><span>Storyboard</span><span class="on">Script</span><span>Publish</span></div>
+            <div class="tablet__shots">
+              <img data-t="shot" alt="" src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=240&amp;q=70&amp;auto=format&amp;fit=crop" />
+              <img data-t="shot" alt="" src="https://images.unsplash.com/photo-1612927601601-6638404737ce?w=240&amp;q=70&amp;auto=format&amp;fit=crop" />
+              <img data-t="shot" alt="" src="https://images.unsplash.com/photo-1591325418441-ff678baf78ef?w=240&amp;q=70&amp;auto=format&amp;fit=crop" />
+            </div>
+            <div class="tline"><b>Narrator</b><small>0:00</small><p data-t="line">Tonight, a bowl built on clear, delicate dashi.</p></div>
+            <div class="tline"><b class="grey">On screen</b><small>0:06</small><p data-t="line">Slow push-in on the ramen.</p></div>
+            <div class="tline"><b>Narrator</b><small>0:12</small><p data-t="line">Springy noodles, lifted from the bowl.</p></div>
+            <div class="tline"><b class="grey">On screen</b><small>0:20</small><p data-t="line">★★★★★ Top review from Google Maps</p></div>
+            <div class="tline"><b>Narrator</b><small>0:28</small><p data-t="line">Hinodeya Ramen. Embarcadero, San Francisco.</p></div>
+          </div>
+        </div>
+        <div class="split__text">
+          <h2 class="heading heading--left">Built for results</h2>
+          <div class="stat"><p class="stat__num">1<small>min</small></p><div><h3>Finished ad</h3><p>The length that works everywhere, from YouTube pre-roll to Reels.</p></div></div>
+          <div class="stat"><p class="stat__num">1<small>click</small></p><div><h3>To publish</h3><p>Post to YouTube and all your socials without touching an editor.</p></div></div>
+          <div class="stat"><p class="stat__num">0</p><div><h3>Cameras needed</h3><p>Your existing photos and your Google Maps or Yelp page are enough.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container">
+        <h2 class="heading heading--left">Frequently asked questions</h2>
+        <div class="faq">
+          <details><summary>Who is Plate Studio for?</summary><p>Plate Studio is for busy restaurant owners who want professional video ads but don’t have the time, budget or skills to film and edit them. If you can run a kitchen, you can run a campaign.</p></details>
+          <details><summary>Where does the data come from?</summary><p>Your ad is built only from the sources you provide: your Google reviews, your Yelp page and any photos you upload. Those are the source of truth, and you can review and edit everything before it goes live.</p></details>
+          <details><summary>What if my restaurant isn’t on Google or Yelp?</summary><p>You can still use Plate Studio. Upload your own photos and add a few details about your restaurant, and your ad is built from those instead.</p></details>
+          <details><summary>Do I need to be good with technology?</summary><p>No. Plate Studio creates your ad from a single link. Editing is just as simple: drag and drop the timeline sliders, or tell the AI what you’d like to change. When you’re happy, publish everywhere in one click.</p></details>
+          <details><summary>How much does it cost?</summary><p>Pricing will be announced soon. Early customers get their first ad free.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="cta">
+      <div class="container cta__inner">
+        <div>
+          <h2>Video ads that fill tables, not your schedule.<br /><span class="shine">Make your first ad with Plate Studio today.</span></h2>
+          <a href="#" class="btn btn--blue btn--lg">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+            Make my own ad
+          </a>
+        </div>
+        <div class="keycaps" aria-hidden="true">
+          <span class="keycap keycap--a">🍔</span>
+          <span class="keycap keycap--b">🍜</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <a href="#" class="logo logo--dark"><span class="logo__mark" aria-hidden="true"></span>Plate Studio</a>
+        <div class="footer__cols">
+          <div><h4>Product</h4><a href="#how">How it works</a><a href="#demo">Demo</a><a href="#features">Features</a><a href="#">Pricing</a></div>
+          <div><h4>Resources</h4><a href="#">Examples <span class="new">New</span></a><a href="#">Blog</a><a href="#">Careers</a><a href="#">Press</a></div>
+          <div><h4>Support</h4><a href="#faq">FAQ</a><a href="#">Contact</a><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+        </div>
+      </div>
+      <p class="status-ok"><span></span>All systems operational</p>
+      <div class="footer__bottom">
+        <p>© <span id="year"></span> Plate Studio. All rights reserved.</p>
+        <div class="socials">
+          <a href="#" aria-label="X"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.8 3h3.1l-6.8 7.8L22 21h-6.2l-4.9-6.4L5.3 21H2.2l7.3-8.3L2 3h6.4l4.4 5.8zM16.7 19.2h1.7L7.4 4.7H5.6z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23 7.5a3 3 0 0 0-2.1-2.1C19 5 12 5 12 5s-7 0-8.9.4A3 3 0 0 0 1 7.5 31 31 0 0 0 .6 12 31 31 0 0 0 1 16.5a3 3 0 0 0 2.1 2.1C5 19 12 19 12 19s7 0 8.9-.4a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .4-4.5 31 31 0 0 0-.4-4.5zM9.8 15.1V8.9l5.4 3.1z"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
