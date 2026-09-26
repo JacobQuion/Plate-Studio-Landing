@@ -103,8 +103,9 @@ button { font: inherit; border: 0; background: none; cursor: pointer; }
 
 .hero__inner { text-align: center; display: flex; flex-direction: column; align-items: center; }
 .hero__title {
-  font-family: var(--serif); font-weight: 400; color: #fff;
-  font-size: clamp(48px, 7vw, 84px); line-height: 1.02; letter-spacing: -.02em;
+  font-family: "Fraunces", var(--serif); font-weight: 400; color: #fff;
+  font-variation-settings: "opsz" 144, "SOFT" 100;
+  font-size: clamp(48px, 7vw, 84px); line-height: 1.02; letter-spacing: -.025em;
   text-shadow: 0 2px 30px rgba(10,0,40,.45);
 }
 .hero__rule { width: 280px; height: 1px; margin: 22px 0; background: linear-gradient(90deg, transparent, rgba(255,255,255,.7), transparent); }
