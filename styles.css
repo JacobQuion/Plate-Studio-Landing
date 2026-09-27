@@ -54,11 +54,15 @@ button { font: inherit; border: 0; background: none; cursor: pointer; }
 .nav__links a:hover { opacity: 1; }
 .nav__cta { margin-left: auto; }
 .logo { display: inline-flex; align-items: center; gap: 7px; font-weight: 600; font-size: 19px; letter-spacing: -.02em; color: #fff; }
+/* Matches the app icon (favicon.svg): blue rounded square with a white play triangle */
 .logo__mark {
-  width: 18px; height: 18px; border-radius: 50%;
-  border: 2px solid currentColor; position: relative;
+  width: 22px; height: 22px; border-radius: 25%; flex: none;
+  background: linear-gradient(135deg, #2b36b0, #4752e3); position: relative;
 }
-.logo__mark::after { content: ""; position: absolute; inset: 3px; border-radius: 50%; background: currentColor; }
+.logo__mark::after {
+  content: ""; position: absolute; inset: 0; background: #fff;
+  clip-path: polygon(37.5% 31.25%, 37.5% 68.75%, 68.75% 50%);
+}
 .logo--dark { color: var(--ink); }
 
 .nav.is-scrolled { background: rgba(255,255,255,.8); backdrop-filter: blur(14px); box-shadow: 0 1px 0 var(--line); }
@@ -182,8 +186,8 @@ button { font: inherit; border: 0; background: none; cursor: pointer; }
 .dock-app--compass::before { content: ""; width: 38px; height: 38px; border-radius: 50%; background: radial-gradient(circle, #5ac8fa, #1a73e8); }
 .dock-app--compass::after { content: ""; position: absolute; width: 4px; height: 26px; border-radius: 2px; background: linear-gradient(#ff3b30 50%, #fff 50%); rotate: 45deg; }
 .dock-app--gear { background: radial-gradient(circle, #9a9ca3 0 30%, #3b3d42 31% 45%, #8e9097 46% 60%, #2c2d31 61%); }
-.dock-app--brand { background: linear-gradient(180deg, #9f67ff, #6d28d9); color: #fff; }
-.dock-app--brand .logo__mark { width: 24px; height: 24px; }
+.dock-app--brand { background: linear-gradient(135deg, #2b36b0, #4752e3); color: #fff; }
+.dock-app--brand .logo__mark { width: 100%; height: 100%; background: none; }
 .dock-app--trash { background: linear-gradient(180deg, #fafafa, #d9d9de); border-radius: 6px 6px 12px 12px; width: 38px; margin: 0 5px; }
 .dock-sep { width: 1px; height: 40px; background: rgba(255,255,255,.5); }
 
@@ -194,7 +198,7 @@ button { font: inherit; border: 0; background: none; cursor: pointer; }
   .dock-app { width: 32px; height: 32px; border-radius: 8px; }
   .dock-app--compass::before { width: 24px; height: 24px; } .dock-app--compass::after { height: 16px; }
   .dock-app--grid { grid-template-columns: repeat(3, 5px); gap: 2px; } .dock-app--grid i { width: 5px; height: 5px; }
-  .dock-app--brand .logo__mark { width: 16px; height: 16px; } .dock-app--trash { width: 26px; }
+  .dock-app--trash { width: 26px; }
 }
 .demo__play {
   width: 84px; height: 84px; border-radius: 50%; display: grid; place-items: center; color: #fff; padding-left: 5px;
