@@ -19,7 +19,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Geist:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=4" />
+  <link rel="stylesheet" href="styles.css?v=6" />
   <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
@@ -82,11 +82,8 @@
 
           <div class="demo__window">
             <div class="demo__bar"><span></span><span></span><span></span></div>
-            <div class="demo__screen">
-              <button class="demo__play" aria-label="Play demo (coming soon)">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><polygon points="7 4 20 12 7 20 7 4"/></svg>
-              </button>
-              <p class="demo__label">Demo video coming soon</p>
+            <div class="demo__screen demo__screen--video">
+              <video src="demo.mp4?v=2" poster="demo-poster.jpg?v=2" autoplay muted loop playsinline preload="auto" aria-label="Plate Studio demo ad"></video>
             </div>
           </div>
 
