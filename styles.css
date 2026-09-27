@@ -459,7 +459,7 @@ kbd { font-family: inherit; font-size: 10px; padding: 1px 5px; border-radius: 4p
   animation: shine 4s linear infinite;
 }
 @keyframes shine { from { background-position: 100% 0; } to { background-position: -150% 0; } }
-.keycaps { position: relative; height: 320px; }
+.keycaps { position: relative; height: 360px; }
 .keycap {
   position: absolute; width: 96px; height: 96px; border-radius: 22px; display: grid; place-items: center;
   font-size: 34px; color: #b9a8dc;
@@ -468,16 +468,17 @@ kbd { font-family: inherit; font-size: 10px; padding: 1px 5px; border-radius: 4p
   animation: float 6s ease-in-out infinite;
 }
 .keycap--a { right: 8%; top: 10px; transform: rotate(12deg); }
-.keycap--b { right: 38%; top: 120px; transform: rotate(-10deg); animation-delay: -3s; }
-.keycap--qr { right: 4%; top: 180px; transform: rotate(-8deg); animation-delay: -1.5s; }
+.keycap--b { right: 58%; top: 120px; transform: rotate(-10deg); animation-delay: -3s; }
+.keycap--qr { right: 4%; top: 144px; width: 192px; height: 192px; border-radius: 40px; transform: rotate(-8deg); animation-delay: -1.5s; }
 .qr {
-  width: 70px; height: 70px; border-radius: 10px; display: grid; place-items: center; padding: 6px;
+  width: 140px; height: 140px; border-radius: 10px; display: grid; place-items: center; padding: 6px;
   border: 2px dashed #c9b9ea; background: rgba(255,255,255,.6);
   font-family: var(--sans); font-size: 9px; font-weight: 500; line-height: 1.25; text-align: center; color: #9a88c4;
 }
-.qr img { width: 100%; height: 100%; object-fit: contain; }
+.qr:has(img) { border: 0; background: #fff; padding: 4px; }
+.qr img { width: 100%; height: 100%; object-fit: contain; border-radius: 6px; }
 .qr-note {
-  position: absolute; right: calc(4% + 104px); top: 268px; display: inline-flex; align-items: flex-end; gap: 4px;
+  position: absolute; right: calc(4% + 200px); top: 314px; display: inline-flex; align-items: flex-end; gap: 4px;
   font-family: var(--serif); font-style: italic; font-size: 15px; color: #a795cf; opacity: .8;
 }
 .qr-note svg { width: 34px; height: 22px; margin-bottom: 8px; }
