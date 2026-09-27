@@ -166,6 +166,8 @@ button { font: inherit; border: 0; background: none; cursor: pointer; }
   aspect-ratio: 16 / 9; display: grid; place-content: center; justify-items: center; gap: 30px;
   background: radial-gradient(60% 60% at 50% 45%, rgba(139,92,246,.28), transparent 70%), #111216;
 }
+.demo__screen--video { position: relative; display: block; overflow: hidden; background: #000; }
+.demo__screen--video video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 
 .demo__dock {
   position: absolute; bottom: 6px; left: 50%; translate: -50% 0;
