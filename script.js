@@ -1,6 +1,12 @@
-// Nav style on scroll
-const nav = document.getElementById("nav");
-const onScroll = () => nav.classList.toggle("is-scrolled", window.scrollY > 8);
+// Floating CTA: show once the demo video reaches the middle of the screen
+const floatCta = document.getElementById("float-cta");
+const demoEl = document.getElementById("demo");
+const onScroll = () => {
+  const on = demoEl.getBoundingClientRect().top < window.innerHeight / 2;
+  floatCta.classList.toggle("is-on", on);
+  floatCta.toggleAttribute("aria-hidden", !on);
+  floatCta.tabIndex = on ? 0 : -1;
+};
 window.addEventListener("scroll", onScroll, { passive: true });
 onScroll();
 
