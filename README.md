@@ -13,4 +13,4 @@ Most small restaurant owners have never made a video ad. [Building the app](http
 
 ## **Additional**
 - [Landing Page Web View](https://platestudiolanding.vercel.app/) (for viewing in the browser).
-- [Demo Video](demo.mp4) (watch the product in action!).
+- [Demo Video](demo.mp4) (Coming Soon!).
