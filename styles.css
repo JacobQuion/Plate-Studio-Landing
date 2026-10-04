@@ -47,12 +47,13 @@ button { font: inherit; border: 0; background: none; cursor: pointer; }
 }
 
 /* ---------- Nav ---------- */
-.nav { position: fixed; inset: 0 0 auto; z-index: 50; transition: background .2s, box-shadow .2s; }
+.nav { position: absolute; inset: 0 0 auto; z-index: 50; }
 .nav__inner { height: 64px; display: flex; align-items: center; gap: 40px; }
 .nav__links { display: flex; gap: 28px; font-size: 14px; font-weight: 500; color: #fff; }
 .nav__links a { opacity: .95; }
 .nav__links a:hover { opacity: 1; }
-.nav__cta { margin-left: auto; }
+.nav__login { margin-left: auto; display: inline-flex; align-items: center; gap: 7px; font-size: 14px; font-weight: 500; color: #fff; opacity: .95; }
+.nav__login:hover { opacity: 1; }
 .logo { display: inline-flex; align-items: center; gap: 7px; font-weight: 600; font-size: 19px; letter-spacing: -.02em; color: #fff; }
 /* Matches the app icon (favicon.svg): blue rounded square with a white play triangle */
 .logo__mark {
@@ -67,8 +68,22 @@ button { font: inherit; border: 0; background: none; cursor: pointer; }
 
 .nav.is-scrolled { background: rgba(255,255,255,.8); backdrop-filter: blur(14px); box-shadow: 0 1px 0 var(--line); }
 .nav.is-scrolled .logo, .nav.is-scrolled .nav__links { color: var(--ink); }
-.nav.is-scrolled .btn--glass { color: #fff; background: var(--ink); box-shadow: none; }
+.nav.is-scrolled .nav__login { color: var(--ink); }
 @media (max-width: 640px) { .nav__links { display: none; } }
+
+/* Floating CTA, revealed by script.js once the demo video scrolls into view */
+.float-cta {
+  position: fixed; z-index: 60; top: 14px; right: max(16px, calc((100vw - 1220px) / 2 + 32px));
+  display: inline-flex; align-items: center; gap: 9px;
+  padding: 11px 20px; border-radius: 14px; font-size: 15px; font-weight: 500; color: #fff;
+  background: linear-gradient(180deg, #9f67ff 0%, #6d28d9 100%);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.35), 0 8px 24px -6px rgba(109,40,217,.55), 0 0 0 1px rgba(109,40,217,.6);
+  opacity: 0; translate: 0 -12px; pointer-events: none;
+  transition: opacity .3s, translate .3s cubic-bezier(.2,.7,.2,1), box-shadow .15s;
+}
+.float-cta.is-on { opacity: 1; translate: 0 0; pointer-events: auto; }
+.float-cta:hover { box-shadow: inset 0 1px 0 rgba(255,255,255,.35), 0 14px 32px -8px rgba(109,40,217,.65), 0 0 0 1px rgba(109,40,217,.6); }
+@media (max-width: 640px) { .float-cta { font-size: 14px; padding: 9px 16px; } }
 
 /* ---------- Hero ---------- */
 .hero { position: relative; padding-top: 128px; }
@@ -148,11 +163,8 @@ button { font: inherit; border: 0; background: none; cursor: pointer; }
 }
 
 .demo__menubar {
-  width: 100%; display: flex; justify-content: space-between; align-items: center;
-  padding: 8px 18px; color: #fff; background: rgba(255,255,255,.18); backdrop-filter: blur(10px);
+  width: 100%; height: 32px; flex: none; color: #fff; background: rgba(255,255,255,.18); backdrop-filter: blur(10px);
 }
-.demo__menubar .logo__mark { width: 16px; height: 16px; }
-.demo__menubar-right { display: flex; gap: 14px; }
 
 .demo__window {
   width: 82%; margin: auto 0 56px; border-radius: 14px; overflow: hidden;
@@ -304,7 +316,7 @@ kbd { font-family: inherit; font-size: 10px; padding: 1px 5px; border-radius: 4p
   padding: 5px; border-radius: 999px; background: #3b3d42;
 }
 .toolbar__logo { width: 22px; height: 22px; border-radius: 50%; border: 2px solid #fff; margin: 0 4px; }
-.toolbar__btn { color: #fff; font-size: 11px; padding: 5px 10px; border-radius: 999px; background: #26272b; }
+.toolbar__btn { color: #fff; width: 38px; height: 26px; display: grid; place-items: center; border-radius: 999px; background: #26272b; }
 .toolbar__stop { width: 26px; height: 26px; border-radius: 50%; background: #26272b; position: relative; }
 .toolbar__stop::after { content: ""; position: absolute; inset: 8px; border-radius: 2px; background: #fff; }
 
@@ -492,14 +504,12 @@ kbd { font-family: inherit; font-size: 10px; padding: 1px 5px; border-radius: 4p
 .footer h4 { font-size: 14px; font-weight: 500; margin-bottom: 14px; }
 .footer__cols a { display: block; font-size: 14px; color: var(--ink-2); margin-bottom: 9px; }
 .footer__cols a:hover { color: var(--ink); }
-.new { font-size: 10px; color: #fff; background: var(--blue); border-radius: 999px; padding: 1px 6px; margin-left: 4px; }
 .status-ok { margin-top: 36px; display: inline-flex; align-items: center; gap: 7px; font-size: 12px; color: var(--ink-2); background: rgba(255,255,255,.45); padding: 6px 10px; border-radius: 6px; }
 .status-ok span { width: 6px; height: 6px; border-radius: 50%; background: #22c55e; }
-.footer__bottom { margin-top: 20px; padding-top: 18px; border-top: 1px solid rgba(0,0,0,.07); display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: var(--muted); }
-.socials { display: flex; gap: 16px; color: var(--ink); }
+.footer__bottom { margin-top: 20px; padding-top: 18px; border-top: 1px solid rgba(0,0,0,.07); display: flex; justify-content: center; align-items: center; text-align: center; font-size: 12px; color: var(--muted); }
 @media (max-width: 640px) {
   .footer__cols { gap: 32px 48px; }
-  .footer__bottom { flex-direction: column-reverse; align-items: flex-start; gap: 14px; }
+  .footer__bottom { flex-direction: column-reverse; align-items: center; gap: 14px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -617,3 +627,35 @@ kbd { font-family: inherit; font-size: 10px; padding: 1px 5px; border-radius: 4p
   .hero__hills, .hero__inner { translate: none !important; }
   .caret { display: none; }
 }
+
+/* ---------- Subpages (contact, privacy, terms) ---------- */
+.page { padding: 136px 0 96px; }
+.page .container { max-width: 760px; }
+.page__eyebrow { font-size: 13px; font-weight: 500; color: var(--blue); margin-bottom: 12px; }
+.page .heading { margin-bottom: 14px; }
+.page__meta { color: var(--muted); font-size: 14px; margin-bottom: 48px; }
+.prose h2 { font-size: 20px; font-weight: 500; letter-spacing: -.02em; margin: 40px 0 12px; }
+.prose p, .prose li { color: var(--ink-2); font-size: 16px; line-height: 1.7; }
+.prose p + p { margin-top: 14px; }
+.prose ul { margin: 12px 0 0 20px; display: grid; gap: 6px; }
+.prose a { color: var(--blue); text-decoration: underline; text-underline-offset: 3px; }
+.contact-card { margin-top: 8px; padding: 28px; border-radius: 16px; background: var(--panel); display: grid; gap: 18px; justify-items: start; }
+.contact-card__email { font-size: clamp(20px, 4vw, 26px); font-weight: 500; letter-spacing: -.02em; overflow-wrap: anywhere; }
+.contact-card__actions { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.copied { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; color: var(--ink-2); opacity: 0; translate: -6px 0; transition: opacity .2s, translate .2s; }
+.copied::before { content: "✓"; color: #16a34a; font-weight: 600; }
+.copied.is-on { opacity: 1; translate: 0 0; }
+.contact-card__note { font-family: var(--serif); font-style: italic; font-size: 20px; color: var(--ink-2); }
+
+/* ---------- Pricing ---------- */
+.plans { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+.plan { display: flex; flex-direction: column; padding: 28px; border-radius: 18px; border: 1px solid var(--line); background: #fff; }
+.plan--featured { border-color: var(--blue-2); box-shadow: 0 0 0 1px var(--blue-2), 0 18px 40px -24px rgba(109,40,217,.45); }
+.plan__name { font-size: 18px; font-weight: 500; letter-spacing: -.01em; }
+.plan__price { margin: 14px 0 22px; font-size: 48px; font-weight: 600; letter-spacing: -.04em; line-height: 1; }
+.plan__price small { font-size: 16px; font-weight: 400; letter-spacing: 0; color: var(--muted); }
+.plan__list { list-style: none; display: grid; gap: 12px; color: var(--ink-2); font-size: 15px; margin-bottom: 28px; }
+.plan__btn { margin-top: auto; display: block; text-align: center; padding: 13px 20px; border-radius: 999px; font-weight: 500; border: 1px solid var(--line); transition: background .15s, transform .15s; }
+.plan__btn:hover { background: #f6f4fb; transform: translateY(-1px); }
+.plan__btn--solid { background: var(--ink); color: #fff; border-color: var(--ink); }
+.plan__btn--solid:hover { background: #22252e; }
