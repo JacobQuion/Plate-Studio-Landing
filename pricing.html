@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pricing | Plate Studio</title>
+  <meta name="description" content="Simple monthly pricing for Plate Studio: Standard at $19.99 and Pro at $59.99." />
+  <link rel="icon" href="favicon.svg?v=3" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png?v=3" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Geist:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=15" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav is-scrolled" id="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="logo" aria-label="Plate Studio home">
+        <span class="logo__mark" aria-hidden="true"></span>Plate Studio
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="index.html#how">How it works</a>
+        <a href="index.html#features">Features</a>
+        <a href="index.html#faq">FAQ</a>
+      </nav>
+      <a href="https://platestudioapp.vercel.app/" class="nav__login"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>Login</a>
+    </div>
+  </header>
+
+  <main class="page">
+    <div class="container">
+      <p class="page__eyebrow">Pricing</p>
+      <h1 class="heading">Plate Studio</h1>
+      <p class="page__meta">Everything you need to make and publish video ads. No editor or film crew required.</p>
+      <div class="plans">
+        <div class="plan plan--featured">
+          <h2 class="plan__name">Standard</h2>
+          <p class="plan__price">$19.99<small>/mo</small></p>
+          <ul class="plan__list">
+            <li>4 video ads per month</li>
+            <li>Export up to 1080p</li>
+            <li>Publish to YouTube, Instagram, TikTok and Meta</li>
+          </ul>
+          <a href="https://platestudioapp.vercel.app/" class="plan__btn plan__btn--solid">Get started</a>
+        </div>
+        <div class="plan">
+          <h2 class="plan__name">Pro</h2>
+          <p class="plan__price">$59.99<small>/mo</small></p>
+          <ul class="plan__list">
+            <li>20 video ads per month</li>
+            <li>Export up to 4K</li>
+            <li>Priority rendering and support</li>
+          </ul>
+          <a href="https://platestudioapp.vercel.app/" class="plan__btn">Get started</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <a href="index.html" class="logo logo--dark"><span class="logo__mark" aria-hidden="true"></span>Plate Studio</a>
+        <div class="footer__cols">
+          <div><h4>Product</h4><a href="index.html#how">How it works</a><a href="index.html#demo">Demo</a><a href="index.html#features">Features</a><a href="pricing.html">Pricing</a></div>
+          <div><h4>Support</h4><a href="index.html#faq">FAQ</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></div>
+        </div>
+      </div>
+      <p class="status-ok"><span></span>All systems operational</p>
+      <div class="footer__bottom">
+        <p>© <span id="year"></span> Plate Studio. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
